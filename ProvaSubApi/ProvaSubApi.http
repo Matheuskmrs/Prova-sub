@@ -1,0 +1,48 @@
+### Cadastrar Aluno
+POST http://localhost:5000/api/aluno
+Content-Type: application/json
+
+{
+  "nome": "João Silva",
+  "dataNascimento": "2000-01-01T00:00:00Z"
+}
+
+###
+
+### Listar Alunos
+GET http://localhost:5000/api/aluno
+
+###
+
+### Cadastrar IMC
+POST http://localhost:5000/api/imc
+Content-Type: application/json
+
+{
+  "alunoId": 1,
+  "peso": 70.5,
+  "altura": 1.75
+}
+
+###
+
+### Listar IMCs
+GET http://localhost:5000/api/imc
+
+###
+
+### Listar IMCs por Aluno
+GET http://localhost:5000/api/imc/por-aluno/1
+
+###
+
+### Alterar IMC
+PUT http://localhost:5000/api/imc/1
+Content-Type: application/json
+
+{
+  "alunoId": 1,
+  "peso": 75.0,
+  "altura": 1.75,
+  "dataMedicao": "2023-01-01T00:00:00Z"
+}
