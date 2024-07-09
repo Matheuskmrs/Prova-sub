@@ -26,7 +26,7 @@ const ListarIMCsPorAluno: React.FC = () => {
                 <label>Aluno:</label>
                 <select value={alunoId} onChange={handleAlunoIdChange}>
                     <option value={0}>Selecione um aluno</option>
-                    {/* Aqui você pode preencher a lista de alunos, similar ao exemplo de Cadastrar IMC */}
+                   
                 </select>
             </div>
             {alunoId !== 0 && (
